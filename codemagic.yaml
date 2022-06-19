@@ -4,14 +4,10 @@ workflows:
     instance_type: mac_mini
     max_build_duration: 60
     environment:
-      groups:
-        - group_name
-      vars:
-        PUBLIC_ENV_VAR: "value here"
-      flutter: stable
       xcode: latest    
     scripts:
-      - git submodule update --init --recursive
-      - cd benchmark/
-      - chmod 777 benchmark.sh
-      - ./benchmark.sh
+      - name: Run Benchmark
+        script: |
+          cd /Users/builder/clone/benchmark
+          chmod 777 benchmark.sh
+          ./benchmark.sh
