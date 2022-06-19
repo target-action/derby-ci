@@ -1,7 +1,18 @@
 # Derby CI
 Simple app to compare speed of different CI options for Apple developers
 
-# CI Providers
+# CI Providers (from fastest to slowest
+
+### Bitrise (M1 Elite XL)
+#### Build Time: 143 sec
+
+- System Version: 12.3.1
+- Xcode 13.4.1
+- Hardware Overview
+    - Model Name: Apple Virtual Machine 1
+    - Model Identifier: VirtualMac2,1
+    - Total Number of Cores: 8
+    - Memory: 12 GB
 
 ### Bitrise (Standard Machine)
 #### Build Time: 407 sec
@@ -18,8 +29,7 @@ Simple app to compare speed of different CI options for Apple developers
     - L3 Cache: 12 MB
     - Number of Processors: 1
     - Memory: 19 GB
-    - Model: VEERTU ANKA
-          
+
 ### Github Actions
 #### Build Time: 714 sec
 
