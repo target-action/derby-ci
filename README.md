@@ -1,5 +1,6 @@
 # Derby CI
-Simple app to compare speed of different CI options for Apple developers
+Just to compare speed of different CI options for Apple developers, using quite popular for estimating local build times [XcodeBenchmark](https://github.com/devMEremenko/XcodeBenchmark) as a submodule.
+For now I just setup simple script step on different CI providers, and manually update the readme with results. To be automated in future.
 
 # CI Providers (from fastest to slowest
 
