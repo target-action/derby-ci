@@ -33,4 +33,5 @@ jobs:
       - name: Run a benchmark
         run: |
           cd benchmark/
+          chmod 777 benchmark.sh
           ./benchmark.sh
