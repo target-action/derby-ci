@@ -14,11 +14,9 @@ blocks:
         commands:
           - checkout
       jobs:
-        - name: Pull git submodule
-          commands:
-            - git submodule update --init --recursive
         - name: Run a benchmark
           commands:
+            - git submodule update --init --recursive
             - cd benchmark/
             - chmod 777 benchmark.sh
             - ./benchmark.sh
