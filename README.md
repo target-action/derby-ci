@@ -47,6 +47,20 @@ For now I just setup simple script step on different CI providers, and manually 
     - Number of Processors: 1
     - Memory: 19 GB
 
+### Codemagic
+#### Build Time: 679 sec
+
+- System Version: 12.4
+- Xcode 13.4.1
+- Hardware Overview
+    - Model Name: Mac
+    - Model Identifier: VMware7,1
+    - Processor Name: Unknown
+    - Processor Speed: 2.19 GHz
+    - Total Number of Cores: 4
+    - Number of Processors: 4
+    - Memory: 8 GB
+
 ### Github Actions
 #### Build Time: 714 sec
 
