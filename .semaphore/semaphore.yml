@@ -23,4 +23,4 @@ blocks:
             - '# so let''s dump logs in a file'
             - ./benchmark.sh > results.log
             - '# and show only the end'
-            - tail -n 21 results.log
+            - tail -n 25 results.log
