@@ -1,0 +1,13 @@
+workflows:
+  my-workflow:
+    name: Run Benchmark
+    instance_type: mac_mini
+    max_build_duration: 60
+    environment:
+      xcode: latest    
+    scripts:
+      - name: Run Benchmark
+        script: |
+          cd /Users/builder/clone/benchmark
+          chmod 777 benchmark.sh
+          ./benchmark.sh
