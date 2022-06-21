@@ -47,6 +47,20 @@ For now I just setup simple script step on different CI providers, and manually 
     - Number of Processors: 1
     - Memory: 19 GB
 
+### Semaphore CI
+#### Build Time: 584 sec
+
+- System Version: 11.5.1
+- Xcode 12.5.1
+- Hardware Overview
+    - Model Name: MacBook Air
+    - Model Identifier: MacBookAir7,1
+    - Processor Name: Unknown
+    - Processor Speed: 2.58 GHz
+    - Total Number of Cores: 4
+    - Number of Processors: 4
+    - Memory: 8 GB
+
 ### Codemagic
 #### Build Time: 679 sec
 
