@@ -8,7 +8,7 @@ For now I just setup simple script step on different CI providers, and manually 
 
 |       Provider                |           CPU           | RAM | Xcode |  macOS  | Time(sec) |
 |:-----------------------------:|:-----------------------:|:---:|:-----:|:-------:|:---------:|
-| Bitrise M1 Elite XL           |         M1 8-core       |  12 | 13.4.1| 12.3.1  |    143    |
+| Bitrise M1 Elite XL           |      M1 XXX 8-core      |  12 | 13.4.1| 12.3.1  |    143    |
 | Bitrise (Elite Gen2)          |     3.19 GHz 8-core     |  35 | 13.4.1| 12.2.1  |    313    |
 | Bitrise (Standard)            |     3.19 GHz 4-core     |  19 | 13.4.1| 12.2.1  |    407    |
 | Semaphore CI (a1-standard-4)  |     2.58 GHz 4-core     |   8 | 12.5.1| 11.5.1  |    584    |
@@ -16,6 +16,8 @@ For now I just setup simple script step on different CI providers, and manually 
 | Github Actions                |     3.33 GHz 3-core     |  14 | 13.2.1| 11.6.6  |    714    |
 
 
+## Notes
+More and more CI providers add M1 machines to their stack, although in most cases they require billing setup, so far I've found only Bitrise M1, which runs pretty fast (e.g. comparing to XcodeBenchmark results, close to MacBook Pro 13" 2020 with 130 sec).
 
 ## Detailed Log
 ### Bitrise (M1 Elite XL)
