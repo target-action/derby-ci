@@ -4,4 +4,8 @@ script:
  - git submodule update --init --recursive
  - cd benchmark/
  - chmod 777 benchmark.sh
- - ./benchmark.sh
+ - # Travis is quite picky, it aborts the build without any output, as well as when there is a too much output
+ - # so we just print every 500th line to make it happy 
+ - ./benchmark.sh | tee results.log | awk 'NR % 500 == 0'
+ - # and show the last 25 lines of the benchmark results log 
+ - tail -n 25 results.log
