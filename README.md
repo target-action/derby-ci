@@ -14,10 +14,14 @@ For now I just setup simple script step on different CI providers, and manually 
 | Semaphore CI (a1-standard-4)  |     2.58 GHz 4-core     |   8 | 12.5.1| 11.5.1  |    584    |
 | Codemagic (mac_mini)          |     2.19 GHz 4-core     |   8 | 13.4.1| 12.4    |    679    |
 | Github Actions                |     3.33 GHz 3-core     |  14 | 13.2.1| 11.6.6  |    714    |
+| Travis CI                     |     2.58 GHz 2-core     |   4 | 13.4.1| 12.4    |   1647    |
 
 
 ## Notes
 More and more CI providers add M1 machines to their stack, although in most cases they require billing setup, so far I've found only Bitrise M1, which runs pretty fast (e.g. comparing to XcodeBenchmark results, close to MacBook Pro 13" 2020 with 130 sec).
+
+Travis CI is the most troublesome. At first it didn't allow to use repo from the organization, so I have to setup billing 2 times for a Free trial. Then the job was terminated, when script was dumping it's output to the log file: "No output has been received in the last 10m0s, this potentially indicates a stalled build or something wrong with the build itself... The build has been terminated"
+After enabling logging into terminal, the build got aborted due to: "The job exceeded the maximum log length, and has been terminated". Sounds like a joke. Semaphore CI and Github actions are also trimming the build output, but at least won't abort the builds. 
 
 ## Detailed Log
 ### Bitrise (M1 Elite XL)
@@ -106,3 +110,17 @@ More and more CI providers add M1 machines to their stack, although in most case
   - L3 Cache: 12 MB
   - Number of Processors: 1
   - Memory: 14 GB
+
+### Travis CI
+#### Build Time: 1647 sec
+
+- System Version: 12.4
+- Xcode 13.4.1
+- Hardware Overview
+  - Model Name: Mac
+  - Model Identifier: VMware7,1
+  - Processor Name: Unknown
+  - Processor Speed: 2.58 GHz
+  - Total Number of Cores: 2
+  - Number of Processors: 2
+  - Memory: 4 GB
