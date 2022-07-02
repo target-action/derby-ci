@@ -4,5 +4,4 @@ script:
  - git submodule update --init --recursive
  - cd benchmark/
  - chmod 777 benchmark.sh
- - ./benchmark.sh > results.log
- - tail -n 25 results.log
+ - ./benchmark.sh
