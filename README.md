@@ -14,6 +14,7 @@ For now I just setup simple script step on different CI providers, and manually 
 | Semaphore CI (a1-standard-4)  |     2.58 GHz 4-core     |   8 | 12.5.1| 11.5.1  |    584    |
 | Codemagic (mac_mini)          |     2.19 GHz 4-core     |   8 | 13.4.1| 12.4    |    679    |
 | Github Actions                |     3.33 GHz 3-core     |  14 | 13.2.1| 11.6.6  |    714    |
+| CircleCI                      |     2.58 GHz 4-core     |   8 | 13.4.1| 12.3.1  |    758    |
 | Travis CI                     |     2.58 GHz 2-core     |   4 | 13.4.1| 12.4    |   1647    |
 
 
@@ -110,6 +111,21 @@ After enabling logging into terminal, the build got aborted due to: "The job exc
   - L3 Cache: 12 MB
   - Number of Processors: 1
   - Memory: 14 GB
+
+
+### CircleCI
+#### Build Time: 758 sec
+
+- System Version: 12.3.1
+- Xcode 13.4.1
+- Hardware Overview
+  - Model Name: Mac
+  - Model Identifier: VMware7,1
+  - Processor Name: Unknown
+  - Processor Speed: 2.58 GHz
+  - Total Number of Cores: 4
+  - Number of Processors: 4
+  - Memory: 8 GB
 
 ### Travis CI
 #### Build Time: 1647 sec
